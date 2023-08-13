@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    from sys import argv
-
-    argv_c = len(argv)
+    import sys
     numbers_sum = 0
 
-    for val in range(1, argv_c):
-        numbers_sum += int(argv[val])
-        print(numbers_sum)
+    for argv_c in sys.argv:
+        if argv_c != sys.argv[0]:
+            numbers_sum += int(argv_c)
+            print(numbers_sum)
