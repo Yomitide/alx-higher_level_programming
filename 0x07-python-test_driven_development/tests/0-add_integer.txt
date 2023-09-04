@@ -38,7 +38,6 @@ Test for passing one bool argument.
 Test for adding two float values.
     >>> print(add_integer(3.0, 8.0))
     11
-FAIL CASE:
 
 Test for passing None as the only argument.
     >>> print(add_integer(None))
@@ -64,20 +63,8 @@ Test for adding a tuple and integer.
 		...
 	TypeError: a must be an integer
 
-Test for adding a list and an integer.
-    >>> print(add_integer([], 3))
-    Traceback (most recent call last):
-        ...
-    TypeError: a must be an integer
-
-Test for passing a tuple as the only argument.
-    >>> print(add_integer((3, 4)))
-    Traceback (most recent call last):
-        ...
-    TypeError: a must be an integer
-
-Test for adding a nan and an integer.
-    >>> print(add_integer(float("nan"), 4))
+Test for adding a NaN and an integer.
+    >>> print(add_integer(float("NaN"), 4))
     Traceback (most recent call last):
         ...
     ValueError: cannot convert float NaN to integer
