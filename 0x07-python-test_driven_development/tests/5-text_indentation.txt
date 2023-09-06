@@ -1,0 +1,34 @@
+# run test with python3 -m doctest -v ./tests/5-text_identation.txt
+
+First import method to test
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+SUCCESS CASE:
+
+
+>>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     <BLANKLINE>
+     Quonam modo?
+     <BLANKLINE>
+     Utrum igitur tibi litteram videor an totas paginas commovere?
+
+     >>> text_indentation("Hey     \n.     ")
+     Hey
+     .
+     <BLANKLINE>
+     <BLANKLINE>
+
+     >>> text_indentation("Hello      ")
+     Hello
+
+     >>> text_indentation("    ")
+     <BLANKLINE>
+
+FAIL CASES:
+
+Test other data types:
+     >>> text_indentation(-1)
+     Traceback (most recent call last):
+     ...
+     TypeError: text must be a string
