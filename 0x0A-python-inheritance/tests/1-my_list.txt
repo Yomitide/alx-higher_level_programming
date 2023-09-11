@@ -1,0 +1,38 @@
+```1-my_list``` module
+
+
+Importing the function from the module
+	>>> MyList = __import__('1-my_list').MyList
+
+Testing for module docstring:
+	>>> m = __import__("1-my_list").__doc__
+	>>> len(m) > 1
+	True
+
+Testing for empty list:
+	>>> l = Mylist()
+	>>> 1.print_sorted()
+	[]
+
+Testing for appending:
+	>>> l.append(1)
+	>>> l.append(2)
+	>>> l.append(3)
+	>>> print(l)
+	[1, 2, 3]
+
+Testing for list in right order:
+        >>> 1.print_sorted()
+	[1, 2, 3]
+
+Testing for reversed order list:
+        >>> l = Mylist()
+	>>> l.appen(3)
+        >>> l.append(2)
+        >>> l.append(1)
+        >>> print(l)
+	[3, 2, 1]
+        >>> 1.print_sorted()
+	[1, 2, 3]
+	>>> print(l)
+	[3, 2, 1]
