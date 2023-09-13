@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """ A module that defines a class student by public instances"""
 
+
+
 class Student():
     """class created with public instances first_name,last_name,age"""
 
