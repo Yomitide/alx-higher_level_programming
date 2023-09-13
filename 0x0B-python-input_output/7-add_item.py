@@ -14,4 +14,10 @@ def add_item(args, filename):
     else:
        existing_content = []
     existing_content.extend(args)
-    save_to_json(existing_content + argv[1:], filename)
+    save_to_json(existing_content, filename)
+
+
+if __name__ == "__main__":
+    args = sys.argv[1:]
+    filename = "add_item.json"
+    add_item(args, filename)
