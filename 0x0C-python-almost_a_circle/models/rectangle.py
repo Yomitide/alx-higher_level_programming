@@ -84,6 +84,10 @@ class Rectangle(Base):
         return value
     def display(self):
         """display function with characters in #"""
+        for i in range(self.y):
+            print ()
+        for i in range(self.height):
+            print(" " * self.x + "#" * self.width)
 
     def update(self, *args, **kwargs):
         """assign arguments to each attribute"""
